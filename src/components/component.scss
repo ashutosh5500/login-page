@@ -1,0 +1,185 @@
+@import "../variable";
+
+
+/*******************************LoginPage*******************************/
+
+.showcase-text {
+  color: white;
+  width: 50%;
+  margin: 200px;
+}
+
+/*******************************Form*******************************/
+
+
+.login-form {
+  border-radius: 5px;
+  margin: 60px 40px;
+  background: #fff;
+}
+
+.forgot {
+  display: flex;
+  justify-content: end;
+
+  a {
+    color: #666666;
+    font-size: 12px;
+  }
+}
+
+.join-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+.login {
+  border-radius: 5px;
+  margin: 60px 40px;
+  background: #fff;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding-top: 70px;
+  }
+
+  span {
+    font-size: 12px;
+    color: #999999;
+  }
+
+  form {
+    padding: 40px;
+  }
+
+  a {
+    color: $primary-grey;
+  }
+}
+
+
+.login .nav-pills {
+  .nav-link {
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 2px solid lightgray;
+    border-radius: 0 !important;
+    color: lightgray;
+  }
+}
+
+.login .nav-pills {
+  .active {
+    border-radius: 0;
+    background-color: #fff;
+    color: $primary-grey;
+    border-bottom: 2px solid #192c3f;
+  }
+}
+
+/******************************************************HOME*************************************/
+
+
+.Home {
+  color: white;
+  margin-top: 20px;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 18px;
+
+      a {
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .login {
+
+    ul {
+      font-size: 12px;
+      padding-top: 30px;
+    }
+  }
+
+  .login form {
+    padding: 0px;
+  }
+
+  .showcase-text {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 200px;
+      width: 200px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+  .forgot {
+    a {
+      font-size: 8px;
+    }
+  }
+  .join-member {
+    span {
+      font-size: 8px;
+    }
+  }
+  .Home {
+    color: white;
+    margin-top: 20px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+
+      li {
+        list-style: none;
+        font-size: 10px;
+
+        a {
+          color: white;
+          font-weight: 600;
+          text-decoration: none;
+        }
+
+      }
+
+      button {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+

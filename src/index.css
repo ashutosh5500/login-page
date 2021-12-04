@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    background-color: #192c3f;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: 'Comfortaa', cursive;
+}
