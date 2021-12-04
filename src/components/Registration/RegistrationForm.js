@@ -1,6 +1,7 @@
 import React, {Fragment, useState} from 'react';
-import CustomInput from "../generic/Custom-Input";
-import CustomBtn from "../generic/Custom-btn";
+import CustomInput from "../../generic/CustomInput";
+import CustomBtn from "../../generic/CustomBtn";
+import './Registration.scss'
 
 const RegistrationForm = () => {
     const [fullName, setFullName] = useState("");
@@ -23,9 +24,6 @@ const RegistrationForm = () => {
             confirmPassword: confirmPassword,
         }
         setRegistration([...registration, newRegisterUser])
-        console.log(newRegisterUser)
-        localStorage.setItem("newUser", JSON.stringify(newRegisterUser))
-
     }
 
     return (

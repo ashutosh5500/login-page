@@ -1,0 +1,27 @@
+.login-form {
+  border-radius: 5px;
+  margin: 60px 40px;
+  background: #fff;
+}
+
+
+.join-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+
+  .login form {
+    padding: 0px;
+  }
+  .join-member {
+    span {
+      font-size: 8px !important;
+    }
+  }
+
+}

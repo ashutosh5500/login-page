@@ -1,7 +1,8 @@
 import React, {Fragment, useState} from 'react';
-import CustomInput from "../generic/Custom-Input";
-import CustomBtn from "../generic/Custom-btn";
+import CustomInput from "../../generic/CustomInput";
+import CustomBtn from "../../generic/CustomBtn";
 import {useNavigate} from "react-router-dom";
+import './LoginForm.scss';
 import axios from "axios";
 
 const LoginForm = () => {
@@ -14,33 +15,21 @@ const LoginForm = () => {
 
     const submitLoginForm = (e) => {
         e.preventDefault();
-        const newUser = {email: email, password: password}
-
-        console.log(newUser);
-
+        const newUser = {email: email, password: password};
         axios.post("https://reqres.in/api/login", newUser)
             .then((response) => {
-                console.log(response)
                 if (response.data.token != null) {
-                    console.log("successfully login")
+                    localStorage.setItem("token", JSON.stringify(response.data.token))
                     navigate("/home")
                 }
 
             })
             .catch(err => {
-                console.log(err)
                 if (err) {
                     alert("No User Found!")
                 }
             })
-        localStorage.setItem("userList", JSON.stringify(newUser))
-        getUserData()
     }
-    const getUserData = () => {
-        let userData = localStorage.getItem("userList")
-        console.log(userData)
-    }
-
     return (
         <Fragment>
             <form className="login-form" onSubmit={submitLoginForm}>

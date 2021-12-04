@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Img from '../assets/images/Asset 2.png'
-import './component.scss'
-import Form from "./Form";
+import './Component.scss'
+import Form from "./Form/Form";
+import {useNavigate} from "react-router-dom";
 
 const LoginPage = () => {
-    // useEffect(() => {
-    //     if (localStorage.getItem('token')) {
-    //         // route back to home page.
-    //     }
-    // }, [])
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (localStorage.getItem('token')) {
+            navigate('/home');
+        }
+    }, [])
     return (
         <div className={"row"}>
             <div className="col-md-8">

@@ -1,0 +1,54 @@
+
+.Home {
+  color: white;
+  margin-top: 20px;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 18px;
+
+      a {
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .Home {
+    color: white;
+    margin-top: 20px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+
+      li {
+        list-style: none;
+        font-size: 10px;
+
+        a {
+          color: white;
+          font-weight: 600;
+          text-decoration: none;
+        }
+
+      }
+
+      button {
+        font-size: 10px;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
-import LoginForm from "./LoginForm";
-import RegistrationForm from "./RegistrationForm";
+import LoginForm from "../LoginForm/LoginForm";
+import RegistrationForm from "../Registration/RegistrationForm";
+import './Form.scss'
 
 const Form = () => {
 
